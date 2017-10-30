@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../static/css/bootstrap/css/bootstrap.css">
+</head>
+<style>
+    html,body{
+        width:100%;
+        height:100%;
+        overflow: hidden;
+        background:url("../../static/img/sinabloga.jpg") 100% 100% ;
+    }
+    .container-fluid{
+        height:100%;
+        border:2px solid #fff;
+    }
+  .header{
+        width: 100%;
+        height:20%;
+        background:rgba(211,47,20,0.5);
+        border:2px solid #fff;
+    }
+  h1{
+      text-align: center;
+      line-height: 80px;
+  }
+    .row{
+        height:80%;
+        border:1px solid #0f0f0f;
+        height: 100%;
+    }
+    .left{
+        height: 100%;
+        border-right:1px solid #0f0f0f;
+        background:rgba(211,47,20,0.5);
+    }
+    .right{
+        background:url("../../static/img/navbg.png") no-repeat left top 90px ;
+    }
+</style>
+<body>
+<div class="header">
+     <h1>欢迎xxx来到后台管理系统</h1>
+</div>
+<div class="container-fluid">
+
+     <div class="row">
+         <div class="col-xs-3 left">
+             <ul>
+                 <li>
+                     管理员管理
+                     <ul class="sub">
+                         <li><a href="selectadmin.html" target="you">查看管理员</a></li>
+                         <li><a href="index.php?m=admin&f=admin&a=addadmin" target="you">添加管理员</a></li>
+                         <li><a href="index.php?m=admin&f=admin&a=level" target="you">管理员级别管理</a></li>
+                     </ul>
+                 </li>
+                 <li>
+                     用户管理
+                     <ul class="sub">
+                         <li><a href="index.php?m=admin&f=admin&a=selectuser" target="you">查看用户</a></li>
+                         <li><a href="index.php?m=admin&f=admin&a=adduser" target="you">添加用户</a></li>
+                         <li><a href="index.php?m=admin&f=admin&a=rote" target="you">用户角色管理</a></li>
+                     </ul>
+                 </li>
+                 <li>
+                     留言管理
+                     <ul class="sub">
+                         <li><a href="index.php?m=admin&f=admin&a=selectmessage" target="you">查看留言</a></li>
+                         <li><a href="index.php?m=admin&f=admin&a=addmessage" target="you">添加留言</a></li>
+                     </ul>
+                 </li>
+                 <li>
+                     用户发表内容管理
+                     <ul class="sub">
+                         <li><a href="index.php?m=admin&f=admin&a=selectcon" target="you">查看内容</a></li>
+                         <li><a href="index.php?m=admin&f=admin&a=checkcon" target="you">审核内容</a></li>
+                         <li><a href="index.php?m=admin&f=admin&a=addcon" target="you">添加内容</a></li>
+                     </ul>
+                 </li>
+                 <li>
+                     分类管理
+                     <ul class="sub">
+                         <li><a href="index.php?m=admin&f=admin&a=selectcate" target="you">查看分类</a></li>
+                         <li><a href="index.php?m=admin&f=admin&a=addcate" target="you">添加分类</a></li>
+                     </ul>
+                 </li>
+                 <li>
+                     推荐位管理
+                     <ul class="sub">
+                         <li><a href="index.php?m=admin&f=admin&a=selectposition" target="you">查看推荐位</a></li>
+                         <li><a href="index.php?m=admin&f=admin&a=addposition" target="you">添加推荐位</a></li>
+                     </ul>
+                 </li>
+                 <li>
+                     其他管理
+                     <ul class="sub">
+                         <li><a href="index.php?m=admin&f=admin&a=indent" target="you">订单管理</a></li>
+                         <li><a href="index.php?m=admin&f=admin&a=userpay" target="you">用户支付管理</a></li>
+                         <li><a href="index.php?m=admin&f=admin&a=merchant" target="you">商家账户管理</a></li>
+                     </ul>
+                 </li>
+             </ul>
+         </div>
+         <div class="col-xs-9 right">
+             <img src="../../static/img/navbg.png" alt="">
+             <iframe src="" frameborder="0" name="you"></iframe>
+         </div>
+     </div>
+</div>
+</body>
+</html>

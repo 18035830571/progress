@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../static/css/bootstrap/css/bootstrap.css">
+</head>
+<style>
+    form{
+        width:400px;
+        height:560px;
+        margin:60px auto;
+        padding:30px;
+        border:1px solid #2aabd2;
+        border-radius: 10px;
+    }
+    .kuang{
+        width:100%;
+        height:auto;
+        padding:50px;
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 40px;
+
+    }
+    .denglu{
+        margin-left: 20px;
+        float:left;
+    }
+    .dian{
+        float:left;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .zhuce{
+        float: left;
+
+    }
+    .deng{
+        width:100%;
+        height:40px;
+        border-radius: 20px;
+        background: pink;
+        margin-top:20px;
+    }
+    .ding1{
+        position:relative;
+    }
+    .glyphicon-user{
+        position:absolute;
+        top:35px;
+        left:6px;
+    }
+    .yong{
+        width:300px;
+        margin-left: 30px;
+        margin-top: 5px;
+        outline: none;
+        border:none;
+    }
+    .zheng{
+        width:340px;
+        height:37px;
+        border:1px solid #ccc;
+        border-radius: 10px;
+    }
+    .ding2{
+        position:relative;
+    }
+    .glyphicon-lock{
+        position:absolute;
+        top:35px;
+        left:6px;
+    }
+    .ding3{
+        position:relative;
+    }
+    .glyphicon-tags{
+        position:absolute;
+        top:35px;
+        left:6px;
+    }
+</style>
+<body>
+<form>
+    <div class="kuang">
+        <div class="denglu"><a href="">登录</a></div>
+        <div class="dian">·</div>
+        <div class="zhuce"><a href="">注册</a></div>
+    </div>
+    <div class="form-group ding1">
+        <label >用户名</label><br>
+        <div class="zheng">
+            <input type="text" class="yong">
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+        </div>
+    </div>
+    <div class="form-group ding2">
+        <label >密码</label>
+        <div class="zheng">
+            <input type="password" class="yong">
+            <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+        </div>
+    </div>
+    <div class="form-group ding3">
+        <label >验证码</label>
+        <div class="zheng">
+            <input type="text" class="yong">
+            <span class="glyphicon glyphicon-tags" aria-hidden="true"></span>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-default deng">登录</button>
+</form>
+</body>
+</html>
